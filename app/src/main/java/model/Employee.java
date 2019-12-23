@@ -1,7 +1,7 @@
 package model;
 
 public class Employee {
-
+    private int id;
     private String employee_name;
     private String employee_salary;
     private int employee_age;
@@ -12,6 +12,18 @@ public class Employee {
         this.employee_salary = employee_salary;
         this.employee_age = employee_age;
         this.profile_image = profile_image;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Employee(int id) {
+        this.id = id;
     }
 
     public String getEmployee_name() {

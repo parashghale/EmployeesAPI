@@ -8,6 +8,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import Api.EmployeeApi;
+import Url.Url;
 import model.Employee;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,7 +27,7 @@ private TextView tv;
         tv= findViewById(R.id.tv);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://dummy.restapiexample.com/api/v1/")
+                .baseUrl(Url.base_url)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

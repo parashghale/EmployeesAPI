@@ -11,10 +11,10 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DeleteUpdateActivity"></activity>
-        <activity android:name=".SearchEmpActivity" />
+        <activity android:name=".DisplayAllEmp" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".DisplayAllEmp">
+        <activity android:name=".SearchEmpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

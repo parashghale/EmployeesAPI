@@ -9,17 +9,27 @@
 
 
     <EditText
-        android:id="@+id/etSearchEmp"
+        android:id="@+id/etEmpNo"
         android:hint="Enter Employee No"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btnSearchEmployee"
+        android:id="@+id/btnSearch"
         android:text="Search"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvData"/>
+
+    </ScrollView>
 
 </LinearLayout>
