@@ -26,12 +26,12 @@ private TextView tv;
 
         tv= findViewById(R.id.tv);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Url.base_url)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl(Url.base_url)
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
 
-        EmployeeApi  employeeApi =retrofit.create(EmployeeApi.class);
+        EmployeeApi  employeeApi =Url.createInstance().create(EmployeeApi.class);
 
         Call<List<Employee>> listCall = employeeApi.getAllEmployees();
 
